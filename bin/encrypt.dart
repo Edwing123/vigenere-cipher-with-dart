@@ -14,7 +14,7 @@ void main() {
     password: password,
     tokens: baseCharacters,
     matrix: matrix,
-    validatePlaintextRE: baseCharactersValidationRE,
+    validateInputText: baseCharactersValidationRE,
   );
 
   print("");
@@ -26,10 +26,10 @@ String cipher({
   required String password,
   required String tokens,
   required String matrix,
-  required RegExp validatePlaintextRE,
+  required RegExp validateInputText,
 }) {
   // Validate plainText.
-  if (validatePlaintextRE.hasMatch(plainText) == false) {
+  if (validateInputText.hasMatch(plainText) == false) {
     throw Exception('Bad input');
   }
 
