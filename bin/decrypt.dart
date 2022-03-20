@@ -28,7 +28,7 @@ String cipher({
   required String matrix,
   required RegExp validateInputText,
 }) {
-  // Validate plainText.
+  // Validate cipherText.
   if (validateInputText.hasMatch(cipherText) == false) {
     throw Exception('Bad input');
   }
