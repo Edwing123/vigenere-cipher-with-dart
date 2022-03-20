@@ -1,1 +1,1 @@
-A simple command-line application.
+An implementation of the Vigenere cipher.
